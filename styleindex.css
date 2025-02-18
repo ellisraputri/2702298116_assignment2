@@ -40,6 +40,10 @@ body{
     margin-top: -50px;
 }
 
+.nav-active{
+    font-weight: 800;
+}
+
 .navbar {
     display: flex;
     align-items: center;
