@@ -129,11 +129,11 @@ input[type=checkbox] {
     font-size: 1.5vw;
 }
 
-li .content3 a{
+.repo_link{
     color:rgb(95,15,15);
 }
 
-li .content3 a:hover{
+.repo_link:hover{
     color:rgb(210, 16, 16);
 }
 
@@ -210,12 +210,45 @@ li .content3 a:hover{
     padding: 10px;
 }
 
+.panel p{
+    font-size: 1.5vw;
+}
+
+.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: Oswald;
+    font-size: 24px;
+}
+  
+.accordion:hover {
+background-color: #ccc;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    border: 1px solid #979696;
+    border-radius: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+
 .container-hide{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+
 
 #content-hide p{
     text-align: justify;
@@ -231,10 +264,6 @@ li .content3 a:hover{
     border: 2px solid rgb(180,4,4);
 }
 
-.content2 li{
-    list-style: none;
-}
-
 .footer {
     width: 100%;
     height: 160px;
@@ -246,7 +275,7 @@ li .content3 a:hover{
 
 .rating-container {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     background: #f4f4f4;
     border-radius: 10px;
 }
@@ -254,6 +283,7 @@ li .content3 a:hover{
 .stars {
     font-size: 2rem;
     cursor: pointer;
+    margin-top: -20px;
 }
 
 .star {
@@ -310,7 +340,12 @@ li .content3 a:hover{
     .content{
         padding-top:150px;
     }
-    
+}
+
+@media screen and (min-width:950px){
+    .content{
+        padding-top:150px;
+    }
 }
 
 @media screen and (max-width:950px){
@@ -325,8 +360,7 @@ li .content3 a:hover{
         height:70px
     }
     .content{
-        padding-top: 400px;
-        height:400px;
+        padding-top: 100px;
         font-size:22px;
     }
     .content button{
@@ -371,11 +405,12 @@ li .content3 a:hover{
     }
     .content{
         padding:20px;
-        padding-top: 180px;
+        padding-top: 100px;
     }
     .content2{
         background-color: rgba(220, 220, 220, 0.863);
         text-align: center;
+        padding: 20px;
     }
     .logo{
         font-size: 45px;
@@ -385,7 +420,6 @@ li .content3 a:hover{
         font-size:18px;
     }
     .content{
-        height:300px;
         font-size:18px;
     }
     .content button{
@@ -401,6 +435,18 @@ li .content3 a:hover{
     .textfoot{
         font-size:18px;
     }
+    .content3{
+        font-size: 14px;
+    }
+    .content-header2{
+        font-size: 24px;
+    }
+    .panel p{
+        font-size: 16px;
+    }
+    .list-header1{
+        font-size: 26px;
+    }
  }
 
  @media screen and (max-width: 620px) {
@@ -412,6 +458,12 @@ li .content3 a:hover{
     }
     .content button:hover{
         font-size: 20px;
+    }
+    .panel p{
+        font-size: 16px;
+    }
+    .list-header1{
+        font-size: 22px;
     }
  }
 
@@ -438,6 +490,16 @@ li .content3 a:hover{
     }
     .content button:hover{
         font-size: 16px;
+    }
+    .panel p{
+        font-size: 12px;
+    }
+    .list-header1{
+        font-size: 16px;
+    }
+
+    img{
+        max-height: 180px;
     }
  }
  

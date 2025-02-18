@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    
-});
+
 
 function nmc_button() {
     var moreText = document.getElementById("content-hide");
